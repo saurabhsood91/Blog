@@ -1,0 +1,28 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.master.vb" Inherits="Blog.main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>My Blog</title>
+    <link rel="Stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <asp:Panel runat="server" ID="title" CssClass="title">
+            <h1>My Personal Weblog</h1>
+        </asp:Panel>
+
+        <asp:Panel runat="server" ID="leftPane" CssClass="leftPane">
+            <asp:ContentPlaceHolder ID="lp" runat="server"></asp:ContentPlaceHolder>
+        </asp:Panel>
+        <asp:Panel runat="server" ID="middlePane" CssClass="middlePane">
+            <asp:ContentPlaceHolder ID="mp" runat="server"></asp:ContentPlaceHolder>
+        </asp:Panel>
+
+    </div>
+    </form>
+</body>
+</html>
